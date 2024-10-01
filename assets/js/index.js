@@ -45,7 +45,9 @@ document.addEventListener('DOMContentLoaded', () => {
     // copy text
     btnCopy.addEventListener('click', () => {
         // salin text output
-        const text = output.innerText;
+        const text = output.value;
+        console.log(`salin : ${text}`);
+        
         navigator.clipboard.writeText(text);
 
         // show copied
