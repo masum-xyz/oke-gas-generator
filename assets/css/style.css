@@ -29,6 +29,13 @@ body {
     flex-direction: column;
 }
 
+.text-area {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 
 .avatar img {
     margin: -100px 0 0 0;
@@ -78,7 +85,7 @@ body {
     font-size: 1rem;
     width: 80%;
     height: 80px;
-    margin: 10px 0 0 0;
+    margin: 10px 0 ;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 8px;
@@ -105,3 +112,54 @@ button {
     outline: var(--primary) 1.4px solid;
 }
 
+/* desktop */
+@media screen and (min-width: 768px) {
+    
+
+    .avatar img {
+        margin-top: -50px;
+        width: 300px;
+    }
+
+    .title h1 {
+        font-size: 3rem;
+    }
+
+    .title p {
+        font-size: 1.5rem;
+    }
+
+    .text-area {
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    textarea {
+        font-size: 1.2rem;
+        width: 90%;
+        height: 100px;
+    }
+
+    #input-text {
+        margin-right: 20px;
+        font-size: 1.2rem;
+        width: 50%;
+        height: 100px;
+    }
+
+    #output-text {
+        margin-left: 20px;
+        font-size: 1.2rem;
+        width: 50%;
+        height: 100px;
+    }
+
+    button {
+        font-size: 1.5rem;
+        width: 80%;
+        padding: 10px 30px;
+    }
+}
